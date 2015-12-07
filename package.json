@@ -4,9 +4,15 @@
 	"description": "Over 130 jQuery Code Snippets",
 	"version": "0.0.1",
 	"publisher": "donjayamanne",
+	"license":"SEE LICENSE IN LICENSE or README.MD",
+	"homepage":"https://github.com/DonJayamanne/jquerysnippets/blob/master/README.md",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
+	"galleryBanner": {
+        "color": "#0769AD",
+        "theme": "dark"
+    },
 	"categories": [
 		"Snippets"
 	],
