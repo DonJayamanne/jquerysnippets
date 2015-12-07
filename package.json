@@ -6,11 +6,12 @@
 	"publisher": "donjayamanne",
 	"license":"SEE LICENSE IN LICENSE or README.MD",
 	"homepage":"https://github.com/DonJayamanne/jquerysnippets/blob/master/README.md",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"galleryBanner": {
-        "color": "#ffffff",
+        "color": "#0769AD",
         "theme": "dark"
     },
 	"categories": [
