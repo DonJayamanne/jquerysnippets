@@ -11,8 +11,8 @@
 		"vscode": "^0.10.1"
 	},
 	"galleryBanner": {
-        "color": "#0769AD",
-        "theme": "dark"
+        "color": "#ffffff",
+        "theme": "light"
     },
 	"categories": [
 		"Snippets"
