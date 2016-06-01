@@ -4,7 +4,7 @@
 	"description": "Over 130 jQuery Code Snippets",
 	"version": "0.0.1",
 	"publisher": "donjayamanne",
-	"license":"SEE LICENSE IN LICENSE or README.MD",
+	"license":"MIT",
 	"homepage":"https://github.com/DonJayamanne/jquerysnippets/blob/master/README.md",
 	"icon": "images/icon.png",
 	"engines": {
