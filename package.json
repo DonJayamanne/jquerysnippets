@@ -29,6 +29,10 @@
 		{
 			"language": "jade",
 			"path": "./snippets/javascript.json"
+		},
+		{
+			"language": "html",
+			"path": "./snippets/javascript.json"
 		}
 		]
 	},
