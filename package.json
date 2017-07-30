@@ -21,7 +21,20 @@
 		"snippets": [{
 			"language": "javascript",
 			"path": "./snippets/javascript.json"
-		}]
+		},
+		{
+			"language": "pug",
+			"path": "./snippets/javascript.json"
+		},
+		{
+			"language": "jade",
+			"path": "./snippets/javascript.json"
+		},
+		{
+			"language": "html",
+			"path": "./snippets/javascript.json"
+		}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
