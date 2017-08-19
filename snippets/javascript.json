@@ -44,10 +44,31 @@
 		],
 		"description": "Perform an asynchronous HTTP (Ajax) request to a ASP.NET web service."
 	},
+	"jqAnimate": {
+		"prefix": "jqAnimate",
+		"body": [
+			"$(${selector}).animate({",
+			"\t${propertyName} : ${value}",
+			"\t$0",
+			"}, ${duration}, function() {",
+			"\t$1",
+			"});"
+		],
+		"description": "Perform a custom animation of a set of CSS properties."
+	},
 	"jqAppend": {
 		"prefix": "jqAppend",
 		"body": [
 			"$(${selector}).append(${content});"
+		],
+		"description": "Insert content, specified by the parameter, to the end of each element in the set of matched elements."
+	},
+	"jqAppendFn": {
+		"prefix": "jqAppendFn",
+		"body": [
+			"$(${selector}).append(function(${index}, ${oldHtml}) {",
+			"\t$0",
+			"});"
 		],
 		"description": "Insert content, specified by the parameter, to the end of each element in the set of matched elements."
 	},
@@ -209,6 +230,15 @@
 		],
 		"description": "Set one or more CSS properties for the set of matched elements."
 	},
+	"jqCssSetFn": {
+		"prefix": "jqCssSetFn",
+		"body": [
+			"$(${selector}).css(${propertyName}, function (${index}, ${value}) {",
+			"\t$0",
+			"});"
+		],
+		"description": "Set one or more CSS properties for the set of matched elements."
+	},
 	"jqCssSetObj": {
 		"prefix": "jqCssSetObj",
 		"body": [
@@ -249,6 +279,15 @@
 			"});"
 		],
 		"description": "Store arbitrary data associated with the matched elements."
+	},
+	"jqDblClick": {
+		"prefix": "jqDblClick",
+		"body": [
+			"$(${selector}).dblclick(function() {",
+			"\t$0",
+			"});"
+		],
+		"description": "Bind an event handler to the \"dblclick\" JavaScript event, or trigger that event on an element."
 	},
 	"jqDie": {
 		"prefix": "jqDie",
@@ -315,6 +354,20 @@
 		],
 		"description": "Remove all child nodes of the set of matched elements from the DOM."
 	},
+	"jqEq": {
+		"prefix": "jqEq",
+		"body": [
+			"$(${selector}).eq(${index});"
+		],
+		"description": "Reduce the set of matched elements to the one at the specified index."
+	},
+	"jqExtend": {
+		"prefix": "jqExtend",
+		"body": [
+			"$.extend(${object}, ${addObject});"
+		],
+		"description": "An object that will receive the new properties if additional objects are passed in or that will extend the jQuery namespace if it is the sole argument."
+	},
 	"jqFadeIn": {
 		"prefix": "jqFadeIn",
 		"body": [
@@ -363,12 +416,42 @@
 		],
 		"description": "Adjust the opacity of the matched elements."
 	},
+	"jqFadeToggle": {
+		"prefix": "jqFadeToggle",
+		"body": [
+			"$(${selector}).fadeToggle();"
+		],
+		"description": "Display or hide the matched elements by animating their opacity.\n .fadeToggle( options ) \n .fadeToggle( [duration ] [, easing ] [, complete ] )"
+	},
+	"jqFilter": {
+		"prefix": "jqFilter",
+		"body": [
+			"$(${selector}).filter(${selector2});"
+		],
+		"description": "Reduce the set of matched elements to those that match the selector."
+	},
+	"jqFilterFn": {
+		"prefix": "jqFilterFn",
+		"body": [
+			"$(${selector}).filter(function(${index}, ${element}) {",
+			"\t$0",
+			"});"
+		],
+		"description": "Reduce the set of matched elements to those that pass the function's test."
+	},
 	"jqFind": {
 		"prefix": "jqFind",
 		"body": [
 			"$(${selector}).find(${selector2});"
 		],
 		"description": "Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element."
+	},
+	"jqFirst": {
+		"prefix": "jqFirst",
+		"body": [
+			"$(${selector}).first();"
+		],
+		"description": "Reduce the set of matched elements to the first in the set."
 	},
 	"jqFocus": {
 		"prefix": "jqFocus",
@@ -476,6 +559,15 @@
 		],
 		"description": "Set the HTML contents of each element in the set of matched elements."
 	},
+	"jqHtmlSetFn": {
+		"prefix": "jqHtmlSetFn",
+		"body": [
+			"$(${selector}).html(function (${index}, ${oldHtml}) {",
+			"\t$0",
+			"});"
+		],
+		"description": "Set the HTML contents of each element in the set of matched elements."
+	},
 	"jqInnerHeight": {
 		"prefix": "jqInnerHeight",
 		"body": [
@@ -530,6 +622,13 @@
 			"});"
 		],
 		"description": "Bind an event handler to the \"keyup\" JavaScript event, or trigger that event on an element."
+	},
+	"jqLast": {
+		"prefix": "jqLast",
+		"body": [
+			"$(${selector}).last()"
+		],
+		"description": "Reduce the set of matched elements to the final one in the set."
 	},
 	"jqLoadGet": {
 		"prefix": "jqLoadGet",
@@ -647,6 +746,27 @@
 		],
 		"description": "A namespace template. ref: http://enterprisejquery.com/2010/10/how-good-c-habits-can-encourage-bad-javascript-habits-part-1/"
 	},
+	"jqNoConflict": {
+		"prefix": "jqNoConflict",
+		"body": [
+			"$.noConflict();"
+		],
+		"description": "Relinquish jQuery’s control of the $ variable."
+	},
+	"jqOff": {
+		"prefix": "jqOff",
+		"body": [
+			"$(${selector}).off(${events});"
+		],
+		"description": "Remove an event handler."
+	},
+	"jqOffFn": {
+		"prefix": "jqOffFn",
+		"body": [
+			"$(${selector}).off(${events}, ${handler});"
+		],
+		"description": "Remove an event handler."
+	},
 	"jqOffsetGet": {
 		"prefix": "jqOffsetGet",
 		"body": [
@@ -693,6 +813,16 @@
 			"});"
 		],
 		"description": "Attach a handler to an event for the elements. The handler is executed at most once per element per event type."
+	},
+	"jqOnObj": {
+		"prefix": "jqOnObj",
+		"body": [
+			"$(${selector}).on({",
+			"\t${propertyName}: ${value}",
+			"\t$0",
+			"});"
+		],
+		"description": "Attach an event handler function for one or more events to the selected elements."
 	},
 	"jqOuterHeight": {
 		"prefix": "jqOuterHeight",
@@ -754,6 +884,15 @@
 		"prefix": "jqPrepend",
 		"body": [
 			"$(${selector}).prepend(${content});"
+		],
+		"description": "Insert content, specified by the parameter, to the beginning of each element in the set of matched elements."
+	},
+	"jqPrependFn": {
+		"prefix": "jqPrependFn",
+		"body": [
+			"$(${selector}).prepend(function(${index}, ${oldHtml}) {",
+			"\t$0",
+			"});"
 		],
 		"description": "Insert content, specified by the parameter, to the beginning of each element in the set of matched elements."
 	},
@@ -946,6 +1085,15 @@
 		"prefix": "jqTextSet",
 		"body": [
 			"$(${selector}).text(${textString});"
+		],
+		"description": "Set the content of each element in the set of matched elements to the specified text."
+	},
+	"jqTextSetFn": {
+		"prefix": "jqTextSetFn",
+		"body": [
+			"$(${selector}).text(function (${index}, ${text}) {",
+			"\t$0",
+			"});"
 		],
 		"description": "Set the content of each element in the set of matched elements to the specified text."
 	},
