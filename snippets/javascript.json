@@ -380,6 +380,16 @@
 		],
 		"description": "Bind an event handler to the \"focus\" JavaScript event, or trigger that event on an element."
 	},
+	"jqFocusOut": {
+		"prefix": "jqFocusOut",
+		"body": [
+			"$(${selector}).focusout(function (e) { ",
+			"\te.preventDefault();",
+			"\t$0",
+			"});"
+		],
+		"description": "Bind an event handler to the \"focusout\" JavaScript event, or trigger that event on an element."
+	},
 	"jqGet": {
 		"prefix": "jqGet",
 		"body": [
