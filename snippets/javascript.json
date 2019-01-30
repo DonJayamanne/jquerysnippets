@@ -49,7 +49,7 @@
 		"body": [
 			"$(${selector}).animate(${content});"
 		],
-		"description": "Transform properties of element in given time with easing function."
+		"description": "Perform a custom animation of a set of CSS properties."
 	}
 	"jqAppend": {
 		"prefix": "jqAppend",
