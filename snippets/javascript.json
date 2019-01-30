@@ -44,6 +44,13 @@
 		],
 		"description": "Perform an asynchronous HTTP (Ajax) request to a ASP.NET web service."
 	},
+	"jqAnimate": {
+		"prefix": "jqAnimate",
+		"body": [
+			"$(${selector}).animate(${content});"
+		],
+		"description": "Perform a custom animation of a set of CSS properties."
+	}
 	"jqAppend": {
 		"prefix": "jqAppend",
 		"body": [
