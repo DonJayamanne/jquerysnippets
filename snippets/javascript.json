@@ -44,6 +44,13 @@
 		],
 		"description": "Perform an asynchronous HTTP (Ajax) request to a ASP.NET web service."
 	},
+	"jqAnimate": {
+		"prefix": "jqAnimate",
+		"body": [
+			"$(${selector}).append(${content});"
+		],
+		"description": "Transform properties of element in given time with easing function."
+	}
 	"jqAppend": {
 		"prefix": "jqAppend",
 		"body": [
