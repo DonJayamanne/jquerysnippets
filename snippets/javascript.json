@@ -47,7 +47,7 @@
 	"jqAnimate": {
 		"prefix": "jqAnimate",
 		"body": [
-			"$(${selector}).append(${content});"
+			"$(${selector}).animate(${content});"
 		],
 		"description": "Transform properties of element in given time with easing function."
 	}
