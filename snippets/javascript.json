@@ -42,7 +42,7 @@
 			"\t},",
 			"\t.fail(function(response) {",
 			"\t\t$1",
-			"\t},",
+			"\t}",
 		],
 		"description": "Perform an asynchronous HTTP (New ajax Format) request."
 	},
