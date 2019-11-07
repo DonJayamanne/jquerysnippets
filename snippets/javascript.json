@@ -28,6 +28,24 @@
 		],
 		"description": "Perform an asynchronous HTTP (Ajax) request."
 	},
+	"jqAjax2": {
+		"prefix": "jqAjax2",
+		"body": [
+			"$.ajax({",
+			"\ttype: \"${method}\",",
+			"\turl: \"${url}\",",
+			"\tdata: \"${data}\",",
+			"\tdataType: \"${dataType}\",",
+			"})",
+			"\t.done(function(response) {",
+			"\t\t$0",
+			"\t},",
+			"\t.fail(function(response) {",
+			"\t\t$1",
+			"\t},",
+		],
+		"description": "Perform an asynchronous HTTP (New ajax Format) request."
+	},
 	"jqAjaxAspNetWebService": {
 		"prefix": "jqAjaxAspNetWebService",
 		"body": [
