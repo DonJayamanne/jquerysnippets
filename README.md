@@ -13,6 +13,7 @@ Trigger | Description
 func | An anonymous function.
 jqAfter | Insert content, specified by the parameter, after each element in the set of matched elements.
 jqAjax | Perform an asynchronous HTTP (Ajax) request.
+jqAjax2 | Perform an asynchronous HTTP (Ajax) request in the new format (With Done and Fail).
 jqAjaxAspNetWebService | Perform an asynchronous HTTP (Ajax) request to a ASP.NET web service.
 jqAppend | Insert content, specified by the parameter, to the end of each element in the set of matched elements.
 jqAppendTo | Insert every element in the set of matched elements to the end of the target.
