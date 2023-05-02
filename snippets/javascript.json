@@ -1071,5 +1071,75 @@
 			"$(${selector}).wrapInner(\"\u003c${wrappingElement}\u003e\u003c/${wrappingElement}\u003e\");"
 		],
 		"description": "Wrap an HTML structure around the content of each element in the set of matched elements."
+	},
+	"jqIs": {
+		"prefix": "jqIs",
+		"body": [
+			"$(${1:selector}).is(${2:selector});"
+		],
+		"description": "Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments."
+	},
+	"jqEq": {
+		"prefix": "jqEq",
+		"body": [
+			"$(${selector}).eq(${index})$0;"
+		],
+		"description": "Reduce the set of matched elements to the one at the specified index."
+	},
+	"jqEven": {
+		"prefix": "jqEven",
+		"body": [
+			"$(${selector}).even()$0;"
+		],
+		"description": "Reduce the set of matched elements to the even ones in the set, numbered from zero."
+	},
+	"jqFilter": {
+		"prefix": "jqFilter",
+		"body": [
+			"$(${1:selector}).filter(${2:selector})$0;"
+		],
+		"description": "Reduce the set of matched elements to those that match the selector or pass the function's test."
+	},
+	"jqFirst": {
+		"prefix": "jqFirst",
+		"body": [
+			"$(${selector}).first()$0;"
+		],
+		"description": "Reduce the set of matched elements to the first in the set."
+	},
+	"jqHas": {
+		"prefix": "jqHas",
+		"body": [
+			"$(${1:selector}).has(${2:selector})$0;"
+		],
+		"description": "Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element."
+	},
+	"jqLast": {
+		"prefix": "jqLast",
+		"body": [
+			"$(${selector}).last()$0;"
+		],
+		"description": "Reduce the set of matched elements to the final one in the set."
+	},
+	"jqNot": {
+		"prefix": "jqNot",
+		"body": [
+			"$(${1:selector}).not(${2:selector})$0;"
+		],
+		"description": "Remove elements from the set of matched elements."
+	},
+	"jqOdd": {
+		"prefix": "jqOdd",
+		"body": [
+			"$(${selector}).odd()$0;"
+		],
+		"description": "Reduce the set of matched elements to the odd ones in the set, numbered from zero."
+	},
+	"jqSlice": {
+		"prefix": "jqSlice",
+		"body": [
+			"$(${selector}).slice(${startIndex})$0;"
+		],
+		"description": "Reduce the set of matched elements to a subset specified by a range of indices."
 	}
 }
